@@ -52,23 +52,22 @@ def verificar_subgrade(grade, subgrade):
     return True
 
 def verificar_espacos(grade):
-    """Função para verificar se ainda há espaços em branco na grade."""
     for linha in grade:
         if 0 in linha:
-            return True  # Ainda há espaços em branco
-    return False  # Todos os espaços estão preenchidos
+            return True  
+    return False 
 
 def jogar():
     grade = [
-        [5, 3, 0, 0, 7, 0, 0, 0, 0],
-        [6, 0, 0, 1, 9, 5, 0, 0, 0],
-        [0, 9, 8, 0, 0, 0, 0, 6, 0],
-        [8, 0, 0, 0, 6, 0, 0, 0, 3],
-        [4, 0, 0, 8, 0, 3, 0, 0, 1],
-        [7, 0, 0, 0, 2, 0, 0, 0, 6],
-        [0, 6, 0, 0, 0, 0, 2, 8, 0],
-        [0, 0, 0, 4, 1, 9, 0, 0, 5],
-        [0, 0, 0, 0, 8, 0, 0, 7, 9]
+        [5, 3, 0, 0, 7, 8, 0, 1, 0],
+        [6, 0, 2, 1, 9, 5, 3, 0, 0],
+        [0, 9, 8, 0, 4, 0, 0, 6, 0],
+        [8, 5, 0, 0, 6, 0, 0, 2, 3],
+        [4, 0, 6, 8, 0, 3, 0, 0, 1],
+        [7, 0, 0, 9, 2, 0, 8, 0, 6],
+        [0, 6, 0, 5, 0, 7, 2, 8, 0],
+        [0, 0, 0, 4, 1, 9, 6, 0, 5],
+        [0, 4, 0, 0, 8, 0, 0, 7, 9]
     ]
     while True:
         imprimir_grade(grade)
